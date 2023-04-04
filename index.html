@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -14,23 +14,32 @@
 
     <main>
         <aside>
+            <h2>Search for a City:</h2>
             <form>
-                <input id="city-search">
-                <button id="search-submit"></button>
-                <ul id="search-history"></ul>
+                <input id="search-input">
+                <button id="search-btn">Search</button>
             </form>
+            <ul id="search-history"></ul>
         </aside>
-        <div id="current-city">
+        <div id="day-1" class="city-display forecast-content">
+            <h2 id="city-name"></h2>
+            <span id="main-date"></span>
+            <i id="main-conditions"></i>
+            <span id="main-temp"></span>
+            <span id="main-wind"></span>
+            <span id="main-humidity"></span>
         </div>
         <div id="5day-forecast">
-            <section id="day-1"></section>
-            <section id="day-2"></section>
-            <section id="day-3"></section>
-            <section id="day-4"></section>
-            <section id="day-5"></section>
+            <section id="day-2" class="forecast-content"></section>
+            <section id="day-3" class="forecast-content"></section>
+            <section id="day-4" class="forecast-content"></section>
+            <section id="day-5" class="forecast-content"></section>
+            <section id="day-6" class="forecast-content"></section>
         </div>
     </main>
 
-    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script href="./assets/js/script.js"></script>
 </body>
 </html>
