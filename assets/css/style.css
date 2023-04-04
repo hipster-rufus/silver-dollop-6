@@ -6,6 +6,11 @@ header {
     margin-bottom: 20px;
 }
 
+main {
+    box-sizing: border-box;
+    display: flex;
+}
+
 aside {
     border: solid;
     border-color: black;
@@ -16,6 +21,7 @@ aside {
 }
 
 .city-display {
+    border: solid;
     border-color: black;
     display: block;
 }
