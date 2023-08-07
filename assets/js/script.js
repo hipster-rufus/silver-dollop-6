@@ -143,7 +143,7 @@ function getForecast() {
             getForecast();
         });
     }
-    searchHistoryList.append(cityLink);
+    searchHistoryList.append(cityItem);
 };
 
 searchBtn.addEventListener("click", function () {
